@@ -2,6 +2,7 @@ from notion_client import Client
 import streamlit as st
 import time
 import json
+import sys
 
 
 # file = open('info.json', 'r')
@@ -44,3 +45,8 @@ if input_inbox:
         time.sleep(0.01)
     '✅ "', input_inbox, '" をinboxに登録しました'
     input_inbox = ''
+
+
+# if __name__ == '__main__':
+#     task = '¥n'.join(sys.argv[1:])
+#     add_inbox(task)
